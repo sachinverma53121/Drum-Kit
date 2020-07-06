@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Drum Kit</title>
+</head>
+<body>
+
+  <div class="drums">
+    <div data-key="65" class="key crash_cymbal" onclick="play(65)">A</div>
+    <div data-key="83" class="key ride_cymbal" onclick="play(83)">S</div>
+    <div data-key="68" class="key high_tom" onclick="play(68)">D</div>
+    <div data-key="70" class="key mid_tom" onclick="play(70)">F</div>
+    <div data-key="71" class="key bass_drum" onclick="play(71)">G</div>
+    <div data-key="72" class="key snare_drum" onclick="play(72)">H</div>
+    <div data-key="74" class="key floor_tom" onclick="play(74)">J</div>
+  </div>  
+
+  <audio data-key="65" src="sounds/crash_cymbal.mp3"></audio>
+  <audio data-key="83" src="sounds/ride_cymbal.mp3"></audio>
+  <audio data-key="68" src="sounds/high_tom.mp3"></audio>
+  <audio data-key="70" src="sounds/mid_tom.mp3"></audio>
+  <audio data-key="71" src="sounds/bass_drum.mp3"></audio>
+  <audio data-key="72" src="sounds/snare_drum.mp3"></audio>
+  <audio data-key="74" src="sounds/floor_tom.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
